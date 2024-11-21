@@ -263,12 +263,12 @@ router.post('/registerUser', async function(req, res, next){
 
   router.post('/withoutLogin', async function(req, res, next){
     var newUser = new User({
-      firstName: 'empty',
-      lastName: 'empty',
+      firstName: 'unknown',
+      lastName: 'unknown',
       userName: req.body.userName,
-      dob: 'empty',
-      password:'empty',
-      email: 'empty',
+      dob: 'unknown',
+      password:'unknown',
+      email: 'unknown',
       gender: req.body.gender,
       role:'Guest',
       userStatus:'Active',
